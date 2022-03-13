@@ -9,7 +9,143 @@ import LinearGradient from 'react-native-linear-gradient';
 const Schedule = ({ params }) => {
 
   const [items, setItems] = useState(
-    { "2022-03-01": [{ "day": "2022-03-01", "height": 137, "name": "TechTrix2022-03-01 #0" }], "2022-03-02": [{ "day": "2022-03-02", "height": 129, "name": "TechTrix2022-03-02 #0" }], "2022-03-03": [{ "day": "2022-03-03", "height": 79, "name": "TechTrix2022-03-03 #0" }], "2022-03-04": [{ "day": "2022-03-04", "height": 50, "name": "TechTrix2022-03-04 #0" }, { "day": "2022-03-04", "height": 50, "name": "TechTrix2022-03-04 #1" }], "2022-03-05": [{ "day": "2022-03-05", "height": 50, "name": "TechTrix2022-03-05 #0" }], "2022-03-06": [{ "day": "2022-03-06", "height": 62, "name": "TechTrix2022-03-06 #0" }], "2022-03-07": [{ "day": "2022-03-07", "height": 104, "name": "TechTrix2022-03-07 #0" }], "2022-03-08": [{ "day": "2022-03-08", "height": 96, "name": "TechTrix2022-03-08 #0" }, { "day": "2022-03-08", "height": 100, "name": "TechTrix2022-03-08 #1" }], "2022-03-09": [{ "day": "2022-03-09", "height": 120, "name": "TechTrix2022-03-09 #0" }, { "day": "2022-03-09", "height": 131, "name": "TechTrix2022-03-09 #1" }, { "day": "2022-03-09", "height": 148, "name": "TechTrix2022-03-09 #2" }], "2022-03-10": [{ "day": "2022-03-10", "height": 50, "name": "TechTrix2022-03-10 #0" }], "2022-03-11": [{ "day": "2022-03-11", "height": 72, "name": "TechTrix2022-03-11 #0" }], "2022-03-12": [{ "day": "2022-03-12", "height": 50, "name": "TechTrix2022-03-12 #0" }, { "day": "2022-03-12", "height": 143, "name": "TechTrix2022-03-12 #1" }], "2022-03-13": [{ "day": "2022-03-13", "height": 122, "name": "TechTrix2022-03-13 #0" }, { "day": "2022-03-13", "height": 95, "name": "TechTrix2022-03-13 #1" }, { "day": "2022-03-13", "height": 123, "name": "TechTrix2022-03-13 #2" }], "2022-03-14": [{ "day": "2022-03-14", "height": 66, "name": "TechTrix2022-03-14 #0" }, { "day": "2022-03-14", "height": 50, "name": "TechTrix2022-03-14 #1" }, { "day": "2022-03-14", "height": 129, "name": "TechTrix2022-03-14 #2" }], "2022-03-15": [{ "day": "2022-03-15", "height": 132, "name": "TechTrix2022-03-15 #0" }], "2022-03-16": [{ "day": "2022-03-16", "height": 79, "name": "TechTrix2022-03-16 #0" }, { "day": "2022-03-16", "height": 129, "name": "TechTrix2022-03-16 #1" }], "2022-03-17": [], "2022-03-18": [{ "day": "2022-03-18", "height": 110, "name": "TechTrix2022-03-18 #0" }, { "day": "2022-03-18", "height": 100, "name": "TechTrix2022-03-18 #1" }, { "day": "2022-03-18", "height": 50, "name": "TechTrix2022-03-18 #2" }], "2022-03-19": [{ "day": "2022-03-19", "height": 115, "name": "TechTrix2022-03-19 #0" }], "2022-03-20": [{ "day": "2022-03-20", "height": 94, "name": "TechTrix2022-03-20 #0" }, { "day": "2022-03-20", "height": 97, "name": "TechTrix2022-03-20 #1" }], "2022-03-21": [{ "day": "2022-03-21", "height": 50, "name": "TechTrix2022-03-21 #0" }, { "day": "2022-03-21", "height": 87, "name": "TechTrix2022-03-21 #1" }, { "day": "2022-03-21", "height": 78, "name": "TechTrix2022-03-21 #2" }], "2022-03-22": [{ "day": "2022-03-22", "height": 50, "name": "TechTrix2022-03-22 #0" }], "2022-03-23": [{ "day": "2022-03-23", "height": 76, "name": "TechTrix2022-03-23 #0" }], "2022-03-24": [{ "day": "2022-03-24", "height": 115, "name": "TechTrix2022-03-24 #0" }, { "day": "2022-03-24", "height": 50, "name": "TechTrix2022-03-24 #1" }, { "day": "2022-03-24", "height": 129, "name": "TechTrix2022-03-24 #2" }], "2022-03-25": [{ "day": "2022-03-25", "height": 63, "name": "TechTrix2022-03-25 #0" }, { "day": "2022-03-25", "height": 50, "name": "TechTrix2022-03-25 #1" }, { "day": "2022-03-25", "height": 82, "name": "TechTrix2022-03-25 #2" }], "2022-03-26": [{ "day": "2022-03-26", "height": 50, "name": "TechTrix2022-03-26 #0" }, { "day": "2022-03-26", "height": 96, "name": "TechTrix2022-03-26 #1" }], "2022-03-27": [{ "day": "2022-03-27", "height": 85, "name": "TechTrix2022-03-27 #0" }, { "day": "2022-03-27", "height": 92, "name": "TechTrix2022-03-27 #1" }], "2022-03-28": [{ "day": "2022-03-28", "height": 50, "name": "TechTrix2022-03-28 #0" }, { "day": "2022-03-28", "height": 50, "name": "TechTrix2022-03-28 #1" }], "2022-03-29": [{ "day": "2022-03-29", "height": 50, "name": "TechTrix2022-03-29 #0" }, { "day": "2022-03-29", "height": 63, "name": "TechTrix2022-03-29 #1" }], "2022-03-30": [{ "day": "2022-03-30", "height": 50, "name": "TechTrix2022-03-30 #0" }], "2022-03-31": [{ "day": "2022-03-31", "height": 113, "name": "TechTrix2022-03-31 #0" }, { "day": "2022-03-31", "height": 50, "name": "TechTrix2022-03-31 #1" }], "2022-04-01": [{ "day": "2022-04-01", "height": 106, "name": "TechTrix2022-04-01 #0" }, { "day": "2022-04-01", "height": 126, "name": "TechTrix2022-04-01 #1" }, { "day": "2022-04-01", "height": 87, "name": "TechTrix2022-04-01 #2" }], "2022-04-02": [{ "day": "2022-04-02", "height": 95, "name": "TechTrix2022-04-02 #0" }, { "day": "2022-04-02", "height": 50, "name": "TechTrix2022-04-02 #1" }], "2022-04-03": [{ "day": "2022-04-03", "height": 50, "name": "TechTrix2022-04-03 #0" }, { "day": "2022-04-03", "height": 64, "name": "TechTrix2022-04-03 #1" }], "2022-04-04": [{ "day": "2022-04-04", "height": 102, "name": "TechTrix2022-04-04 #0" }], "2022-04-05": [{ "day": "2022-04-05", "height": 138, "name": "TechTrix2022-04-05 #0" }], "2022-04-06": [{ "day": "2022-04-06", "height": 89, "name": "TechTrix2022-04-06 #0" }, { "day": "2022-04-06", "height": 50, "name": "TechTrix2022-04-06 #1" }, { "day": "2022-04-06", "height": 50, "name": "TechTrix2022-04-06 #2" }], "2022-04-07": [{ "day": "2022-04-07", "height": 107, "name": "TechTrix2022-04-07 #0" }], "2022-04-08": [{ "day": "2022-04-08", "height": 69, "name": "TechTrix2022-04-08 #0" }, { "day": "2022-04-08", "height": 93, "name": "TechTrix2022-04-08 #1" }], "2022-04-09": [{ "day": "2022-04-09", "height": 89, "name": "TechTrix2022-04-09 #0" }], "2022-04-10": [{ "day": "2022-04-10", "height": 50, "name": "TechTrix2022-04-10 #0" }, { "day": "2022-04-10", "height": 50, "name": "TechTrix2022-04-10 #1" }], "2022-04-11": [{ "day": "2022-04-11", "height": 102, "name": "TechTrix2022-04-11 #0" }, { "day": "2022-04-11", "height": 84, "name": "TechTrix2022-04-11 #1" }, { "day": "2022-04-11", "height": 114, "name": "TechTrix2022-04-11 #2" }], "2022-04-12": [{ "day": "2022-04-12", "height": 91, "name": "TechTrix2022-04-12 #0" }, { "day": "2022-04-12", "height": 50, "name": "TechTrix2022-04-12 #1" }, { "day": "2022-04-12", "height": 92, "name": "TechTrix2022-04-12 #2" }], "2022-04-13": [{ "day": "2022-04-13", "height": 50, "name": "TechTrix2022-04-13 #0" }], "2022-04-14": [{ "day": "2022-04-14", "height": 50, "name": "TechTrix2022-04-14 #0" }, { "day": "2022-04-14", "height": 113, "name": "TechTrix2022-04-14 #1" }], "2022-04-15": [{ "day": "2022-04-15", "height": 50, "name": "TechTrix2022-04-15 #0" }, { "day": "2022-04-15", "height": 50, "name": "TechTrix2022-04-15 #1" }], "2022-04-16": [{ "day": "2022-04-16", "height": 120, "name": "TechTrix2022-04-16 #0" }], "2022-04-17": [{ "day": "2022-04-17", "height": 78, "name": "TechTrix2022-04-17 #0" }], "2022-04-18": [{ "day": "2022-04-18", "height": 53, "name": "TechTrix2022-04-18 #0" }, { "day": "2022-04-18", "height": 106, "name": "TechTrix2022-04-18 #1" }, { "day": "2022-04-18", "height": 132, "name": "TechTrix2022-04-18 #2" }], "2022-04-19": [{ "day": "2022-04-19", "height": 50, "name": "TechTrix2022-04-19 #0" }] }
+    {
+      "2022-04-01": [
+        {
+          "day": "2022-04-01",
+          "height": 106,
+          "name": "TechTrix2022-04-01 #0"
+        },
+        {
+          "day": "2022-04-01",
+          "height": 126,
+          "name": "TechTrix2022-04-01 #1"
+        },
+        {
+          "day": "2022-04-01",
+          "height": 87,
+          "name": "TechTrix2022-04-01 #2"
+        }
+      ],
+      "2022-04-02": [],
+      "2022-04-03": [],
+      "2022-04-04": [
+        {
+          "day": "2022-04-04",
+          "height": 102,
+          "name": "TechTrix2022-04-04 #0"
+        }
+      ],
+      "2022-04-05": [],
+      "2022-04-06": [
+        {
+          "day": "2022-04-06",
+          "height": 89,
+          "name": "TechTrix2022-04-06 #0"
+        },
+        {
+          "day": "2022-04-06",
+          "height": 50,
+          "name": "TechTrix2022-04-06 #1"
+        },
+        {
+          "day": "2022-04-06",
+          "height": 50,
+          "name": "TechTrix2022-04-06 #2"
+        }
+      ],
+      "2022-04-07": [
+        {
+          "day": "2022-04-07",
+          "height": 107,
+          "name": "TechTrix2022-04-07 #0"
+        }
+      ],
+      "2022-04-08": [
+        {
+          "day": "2022-04-08",
+          "height": 69,
+          "name": "TechTrix2022-04-08 #0"
+        },
+        {
+          "day": "2022-04-08",
+          "height": 93,
+          "name": "TechTrix2022-04-08 #1"
+        }
+      ],
+      "2022-04-09": [],
+      "2022-04-10": [
+        {
+          "day": "2022-04-10",
+          "height": 50,
+          "name": "TechTrix2022-04-10 #0"
+        },
+        {
+          "day": "2022-04-10",
+          "height": 50,
+          "name": "TechTrix2022-04-10 #1"
+        }
+      ],
+      "2022-04-11": [],
+      "2022-04-12": [
+        {
+          "day": "2022-04-12",
+          "height": 91,
+          "name": "TechTrix2022-04-12 #0"
+        },
+        {
+          "day": "2022-04-12",
+          "height": 50,
+          "name": "TechTrix2022-04-12 #1"
+        },
+        {
+          "day": "2022-04-12",
+          "height": 92,
+          "name": "TechTrix2022-04-12 #2"
+        }
+      ],
+      "2022-04-13": [
+        {
+          "day": "2022-04-13",
+          "height": 50,
+          "name": "TechTrix2022-04-13 #0"
+        }
+      ],
+      "2022-04-14": [],
+      "2022-04-15": [],
+      "2022-04-16": [],
+      "2022-04-17": [
+        {
+          "day": "2022-04-17",
+          "height": 78,
+          "name": "TechTrix2022-04-17 #0"
+        }
+      ],
+      "2022-04-18": [
+        {
+          "day": "2022-04-18",
+          "height": 53,
+          "name": "TechTrix2022-04-18 #0"
+        },
+        {
+          "day": "2022-04-18",
+          "height": 106,
+          "name": "TechTrix2022-04-18 #1"
+        }
+      ],
+      "2022-04-19": [
+        {
+          "day": "2022-04-19",
+          "height": 50,
+          "name": "TechTrix2022-04-19 #0"
+        },
+        {
+          "day": "2022-04-19",
+          "height": 100,
+          "name": "TechTrix2022-04-19 #1"
+        }
+      ]
+    }
   )
 
   const loadItems = (day) => {
@@ -146,7 +282,7 @@ const Schedule = ({ params }) => {
       <Agenda
         items={items}
         loadItemsForMonth={loadItems}
-        selected={'2022-03-16'}
+        selected={'2022-04-01'}
         renderItem={renderItem}
         renderEmptyDate={renderEmptyDate}
         rowHasChanged={rowHasChanged}
@@ -158,7 +294,7 @@ const Schedule = ({ params }) => {
         // Max amount of months allowed to scroll to the past. Default = 50
         pastScrollRange={1}
         // Max amount of months allowed to scroll to the future. Default = 50
-        futureScrollRange={2}
+        futureScrollRange={1}
         // markingType={'period'}
         markedDates={{
           '2022-04-08': {textColor: '#43515c'},

@@ -37,6 +37,8 @@ export const Tickets = [
     title: 'The Weekend',
     startingTime: '2020/12/21 09:10 PM',
     image: require('../assets/images/event_1.png'),
+    campous: 'RCC',
+    location: 'N 310',
     description:
       'Non exercitation ullamco reprehenderit incididunt. Officia incididunt id exercitation velit aliqua ut deserunt do non. Aliquip sunt dolor enim occaecat ullamco id consectetur .',
   },
@@ -46,6 +48,8 @@ export const Tickets = [
     title: 'Firemasters',
     startingTime: '2020/12/25 08:00 PM',
     image: require('../assets/images/event_2.png'),
+    campous: 'RCC',
+    location: 'Middle Ground',
     description:
       'Lorem ipsum dolor sit amet, consectetur elit adipiscing elit. Venenatis pulvinar a amet in, suspendisse vitae, posuere eu tortor et. Und commodo, fermentum, mauris leo eget.',
   },
@@ -55,6 +59,19 @@ export const Tickets = [
     title: 'The Party',
     startingTime: '2020/12/21 10:10 PM',
     image: require('../assets/images/event_1.png'),
+    campous: 'RCC',
+    location: 'N 310B',
+    description:
+      'Non exercitation ullamco reprehenderit incididunt. Officia incididunt id exercitation velit aliqua ut deserunt do non. Aliquip sunt dolor enim occaecat ullamco id consectetur .',
+  },
+  {
+    id: 4,
+    type: 'TECH',
+    title: 'The Fest',
+    startingTime: '2020/12/21 10:10 PM',
+    image: require('../assets/images/event_1.png'),
+    campous: 'RCC',
+    location: 'Middle Ground',
     description:
       'Non exercitation ullamco reprehenderit incididunt. Officia incididunt id exercitation velit aliqua ut deserunt do non. Aliquip sunt dolor enim occaecat ullamco id consectetur .',
   },
@@ -254,6 +271,6 @@ export const MapStyle = [
   },
 ];
 
-const dummyData = { Events, Region, MapStyle };
+const dummyData = { Events, Tickets, Region, MapStyle };
 
 export default dummyData;
